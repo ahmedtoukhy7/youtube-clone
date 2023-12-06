@@ -47,8 +47,8 @@ useEffect(()=>{
 
   return <>
 
-  <div className='row g-5 my-3'>
-    <div className='col-lg-9 text-light'>
+  <div className='d-flex content g-5 my-3'>
+    <div className='col-lg-9 video-content text-light '>
       <ReactPlayer  width="100%"  controls className='react-player' url={`https://www.youtube.com/watch?v=${id}`} />
       <p className='fs-5 px-3 mt-3'>{videoDetails?.snippet.title}</p>
       <div className='d-flex px-3 justify-content-between'>
@@ -64,9 +64,11 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className='comments'>
+      <div className='comments px-3'>
+
+        <h2 className='my-4 '>Comments</h2>
         {comment ?  comment?.slice(0,20).map((ele , index)=>{
-          return <div key={index} className='d-flex   gap-2 my-5'>
+          return <div key={index} className='d-flex px-3   gap-2 my-5'>
             <img className='rounded-circle commentImg' src={ele.snippet.topLevelComment.snippet.authorProfileImageUrl} alt="" />
 
             <div className='text '> 
@@ -85,12 +87,7 @@ useEffect(()=>{
     </div>
 
 
-
-
-
-
-
-    <div className='col-lg-3'>
+    <div className='col-lg-3 related-content '>
     <div className='myrow d-flex px-3  flex-column '>
       {relatedvideoDetails.map((rel , inx)=>{
         return <div className='myitem '>

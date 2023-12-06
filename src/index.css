@@ -162,6 +162,14 @@ background-color: transparent !important;
   }
 }
 
+@media (max-width:445px){
+  .myrow .myitem{
+    width: 100% !important ;
+    flex-direction: column !important;
+  }
+}
+
+
 .react-player{
   height: 600px !important;
 }
@@ -170,7 +178,8 @@ background-color: transparent !important;
   position: absolute;
   right: 2.3%;
   
-  width: 6rem;
+  width: 70px;
+  
 }
 .pointer{
   cursor: pointer;
@@ -209,6 +218,7 @@ width: 25%;
   .side{
     width:200px
   }
+ 
 }
 @media ( max-width:775px){
  
@@ -277,10 +287,22 @@ width: 25%;
     margin: auto !important;
     
   }
+  .searchDiv{
+    width: 350px;
+  }
+  .searchDiv .search{
+    width: 50px;
+  }
   .show{
     display: none !important;
    
   }
+  .react-player{
+    height: 600px !important;
+    width: 90% !important;
+    margin: auto;
+  }
+  
   .channelImg{
     width: 30% !important;
     height: 30% !important;
@@ -296,4 +318,23 @@ width: 25%;
     display: block !important;
   }
   
+}
+
+
+@media (max-width:992px){
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .video-content{
+width: 100%;
+  }
+  .related-content{
+    width: 100%;
+  }
+
+  .react-player{
+    width: 90% !important;
+    margin: auto !important;
+  }
 }

@@ -13,7 +13,7 @@ export default function PlaylistDetails() {
           
         },
         headers: {
-          'X-RapidAPI-Key': '2014cf4d0amsh89b8d1244a6e31dp1cd51djsnb4ec7392f3f3',
+          'X-RapidAPI-Key': '92b5603311msh4a7143f635bf4e8p10fcf6jsn9732cce7494f',
           'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
         }
       };

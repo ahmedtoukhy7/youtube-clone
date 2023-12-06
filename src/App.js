@@ -12,11 +12,6 @@ import PlaylistDetails from './components/PlaylistDetails/PlaylistDetails';
 
 function App() {
 
-//  async function search (name){
-//    let repo = await getData(`search?part=snippet&q=${name}`)
-//    console.log(repo)
-//    return repo
-//   }
 
   const routes =createHashRouter([
     {path:'/', element: <Layout/> , children:[

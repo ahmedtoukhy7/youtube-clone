@@ -43,7 +43,7 @@ let inputSearch=useRef()
     
     </div>
 
-    <div className='col-sm-9  d-flex justify-content-end'>
+    <div className='col-sm-9  d-flex searchDiv justify-content-end'>
     
 
       {searchBtn ? <div className=' d-flex show search-cont position-relative w-50  mx-auto align-items-center justify-content-center'>
